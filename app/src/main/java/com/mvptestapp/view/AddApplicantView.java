@@ -6,8 +6,8 @@ public interface AddApplicantView {
 
     void hideProgress();
 
-    void setFirstnameError();
-    void setLastnameError();
+    void setFirstnameError(int emailErrorType);
+    void setLastnameError(int emailErrorType);
     void setEmailError(int emailErrorType);
     void setLoanAmount(int emailErrorType);
     void setPanCard();

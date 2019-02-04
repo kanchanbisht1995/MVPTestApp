@@ -83,4 +83,5 @@
     <string name="pan_required">PAN is required.</string>
     <string name="logged_in">Successfully logged in.</string>
     <string name="user_added">User successfully added</string>
+    <string name="less_than_3">minimun 3 char required</string>
 </resources>

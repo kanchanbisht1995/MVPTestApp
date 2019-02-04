@@ -38,16 +38,31 @@ public class AddApplicantPresenter {
 
         if (TextUtils.isEmpty(firstname)) {
             if (applicantView != null) {
-                applicantView.setFirstnameError();
+                applicantView.setFirstnameError(AppConstants.EMPTY);
                 applicantView.hideProgress();
             }
             return;
         }
 
+        if (firstname.length()<3) {
+            if (applicantView != null) {
+                applicantView.setFirstnameError(AppConstants.LESS_THAN_3);
+                applicantView.hideProgress();
+            }
+            return;
+        }
 
         if (TextUtils.isEmpty(lastname)) {
             if (applicantView != null) {
-                applicantView.setLastnameError();
+                applicantView.setLastnameError(AppConstants.EMPTY);
+                applicantView.hideProgress();
+            }
+            return;
+        }
+
+        if (lastname.length()<3) {
+            if (applicantView != null) {
+                applicantView.setLastnameError(AppConstants.LESS_THAN_3);
                 applicantView.hideProgress();
             }
             return;

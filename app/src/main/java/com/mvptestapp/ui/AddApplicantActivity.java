@@ -55,13 +55,20 @@ public class AddApplicantActivity extends AppCompatActivity implements AddApplic
     }
 
     @Override
-    public void setFirstnameError() {
-        etFirstname.setError(getString(R.string.cant_empty));
+    public void setFirstnameError(int emailErrorType) {
+        if(emailErrorType==AppConstants.LESS_THAN_3)
+        etFirstname.setError(getString(R.string.less_than_3));
+        else
+            etFirstname.setError(getString(R.string.cant_empty));
     }
 
     @Override
-    public void setLastnameError() {
-        etLastName.setError(getString(R.string.cant_empty));
+    public void setLastnameError(int emailErrorType) {
+
+        if(emailErrorType==AppConstants.LESS_THAN_3)
+            etLastName.setError(getString(R.string.less_than_3));
+        else
+            etLastName.setError(getString(R.string.cant_empty));
     }
 
     @Override
