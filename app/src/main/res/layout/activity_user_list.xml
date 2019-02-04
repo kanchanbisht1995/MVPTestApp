@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/login_cardview_color"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvuserList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:gravity="center"
+        android:text="@string/userddetails"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:layout_below="@id/tvuserList"
+        android:layout_marginTop="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/tvAddApplicant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_36sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_36sdp"
+        android:background="@drawable/login_button_drawable"
+        android:gravity="center"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text="@string/add_applicant"
+        android:textColor="@color/login_cardview_color"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

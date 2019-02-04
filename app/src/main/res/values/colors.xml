@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#3A86D3</color>
+    <color name="blue">#0E569C</color>
+    <color name="login_cardview_color">#fffff7</color>
+    <color name="userlist_cardview_color">#dae7f4</color>
+    <color name="white_dark">#e9eced</color>
+
+</resources>
