@@ -69,6 +69,8 @@ public class AddApplicantPresenter {
         }
 
         if (TextUtils.isEmpty(emailid)) {
+
+
             if (applicantView != null) {
                 applicantView.setEmailError(AppConstants.EMPTY);
                 applicantView.hideProgress();
